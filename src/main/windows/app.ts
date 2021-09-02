@@ -18,12 +18,13 @@ export class AppWindow {
   public constructor(incognito: boolean) {
     this.win = new BrowserWindow({
       frame: false,
+      transparent: true,
       minWidth: 400,
       minHeight: 450,
       width: 900,
       height: 700,
       titleBarStyle: 'hiddenInset',
-      backgroundColor: '#ffffff',
+      ////// backgroundColor: '#ffffff',
       webPreferences: {
         plugins: true,
         // TODO: enable sandbox, contextIsolation and disable nodeIntegration to improve security
